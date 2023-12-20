@@ -43,6 +43,7 @@ class _CalculateTipState extends State<CalculateTip> {
                 const SizedBox(height: 40),
                 TextField(
                   controller: _billAmountController,
+                  keyboardType: TextInputType.number,
                   style: const TextStyle(
                     color: Colors.black,
                     fontSize: 20,
@@ -65,6 +66,7 @@ class _CalculateTipState extends State<CalculateTip> {
                 const SizedBox(height: 30),
                 TextField(
                   controller: _tipPercentController,
+                  keyboardType: TextInputType.number,
                   style: const TextStyle(
                     color: Colors.black,
                     fontSize: 20,
