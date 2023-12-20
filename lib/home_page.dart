@@ -14,13 +14,6 @@ class _CalculateTipState extends State<CalculateTip> {
   bool roundTip = false;
   double tipAmount = 0;
 
-  @override
-  void dispose() {
-    _billAmountController.dispose();
-    _tipPercentController.dispose();
-    super.dispose();
-  }
-
   double calculateTip(){
     double tip = double.parse(_billAmountController.text) * double.parse(_tipPercentController.text) / 100;
     return tip;
